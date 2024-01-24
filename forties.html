@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>comedy movies of decades</title>
+   
+   <style>
+        body {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 10px;
+            margin-top: 20px;
+            background-color:beige;
+        }
+        
+
+        .container {
+            text-align: center;
+            grid-column: span 5; /* Span all columns */
+        
+        }
+        h1 {
+            margin-bottom: 20px;
+            background-color: rgb(11, 11, 10);
+            color: gold;
+        }
+      
+        h2 {
+            margin-bottom: 20px;
+            background-color: black;
+            color: gold;
+        }
+         /* Add a common class for all h2 elements */
+        .movie-title {
+            margin-bottom: 20px;
+            background-color: black;
+            color: gold;
+            font-size: 18px;
+         
+        }
+        .box-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background-color:lightblue;
+            color: black;
+        }
+        .header {
+            align-items: center;
+        }
+
+        .box {
+            width: 150px;
+            background-color: lightblue;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 12px;
+            padding: 10px; /* Add padding for spacing between image and text */
+        }
+                
+        .centered-nav {
+          display:flex;
+          justify-content: center;
+          margin-top: 20px;
+          margin-left: 80px;
+          gap: 8px;
+        }  
+          
+        
+
+        .image {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            cursor: pointer;
+        }
+        
+        .video-container {
+            position: relative;
+        }
+
+        #video {
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+
+        
+        
+
+        /* Adjust the text box to expand based on content */
+        .text-box {
+            flex-grow: 1;
+            text-align: center;           
+            padding: 10px; /* Add padding for spacing between text and box */
+        }
+        #box2 .text-box {
+            flex-grow: 1;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+      
+</head>
+<body>
+    <div class="header">
+    <div class="centered-nav">
+      <button type="button" class="btn btn-primary" onclick="openFile('forties')">1940s</button>
+      <button type="button" class="btn btn-secondary" onclick="openFile('fifties')">1950s</button>
+      <button type="button" class="btn btn-success" onclick="openFile('sixties')">1960s</button>
+      <button type="button" class="btn btn-danger" onclick="openFile('seventies')">1970s</button>
+      <button type="button" class="btn btn-warning" onclick="openFile('eighties')">1980s</button>
+      <button type="button" class="btn btn-primary" onclick="openFile('nineties')">1990s</button>
+      <button type="button" class="btn btn-primary" onclick="openFile('index')">RETURN</button>
+      
+    </div>
+    
+  </div>
+     <script>
+      function openFile(buttonName) {
+        window.location.href = buttonName + '.html';
+      }
+    </script>
+    <div class="container">
+        <h1>Top Comedy Movies of 1940s</h1>
+    </div>
+
+    <!-- First row -->
+    <div class="box-container">
+        <div class="box">
+            <a href="https://www.youtube.com/watch?v=2IZbu5ktj_M" target= "_blank"></a>
+            <img src="images/bringingupbaby.png" alt="Bringing up baby" id="movie1-thumbnail" class="image">
+            <div class= "text-box">
+               <a href="https://www.youtube.com/watch?v=VE1O9SwwB1c&t=13s&pp=ygUbYnJpbmdpbmcgdXAgYmFieSBmdWxsIG1vdmll" target="_blank"><strong>Bringing up baby</strong></a>
+                <p>There’s real kinship in the infectious, rapid-fire dialogue and class 
+                   critiques of the screwball genre, at least as rendered by masters
+                   like Frank Capra, Howard Hawks, Preston Sturges and others. 
+                   Screwball comedies helped defuse Depression-era tensions and anxieties, 
+                   both external and internal, and set the standard for witty repartee. 
+                   The script, acting, and astonishingly deft pacing of Hawks’ Bringing Up Baby, 
+                   which features irresistible performances from Katherine Hepburn and 
+                   Cary Grant, gives it a leg up on nearly all others. 
+                   Bringing up baby                
+..              </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="box-container">
+        <div class="box">
+            <a href="https://www.youtube.com/watch?v=Ot948zIr0s&t" target= "_blank"></a>          
+               
+            <img src="images/hisgirlfriday.png" alt="His girl Friday" id="movie2-thumbnail" class="image">
+            <div class="text-box" id="box2">
+            <h2 class="movie-title">His girl friday</h2>
+            <a href="https://www.youtube.com/watch?v=BBa_OHGmOPs&t=123s&pp=ygUVaGlzIGdpcmwgZnJpZGF5IG1vdmll" target="_blank"><strong>His Girl Friday</strong></a>
+                <p>Easily one of the funniest film ever made this screwball comedy features
+                   Cary Grant as a powerful news editor who is about to use his protege and
+                   ex-wife (Rosalind Russell) to a second marriage. He rapidly devises a scheme
+                    to distract the normally sauvy woman from her rapidly approaching nuptial. 
+                    The picture became known for its rapid-fire dialogue and playful comedy.
+                     It is judged as the standard for the screwball comedy genre and has 
+                     ever been noted as one of the earliest successful dramedies of all time..</p>
+            </div>
+        </div>
+    </div><div class= "box-container">
+        <div class= "box">
+            <a href= "https://www.youtube.com/watch?v=P27sTXSGrhQ" target= "_blank"></a>
+            <img src= "images/thegreatdictator.png" alt="The great dictator" id="movie3-thumbnail" class="image">
+               <h2 class="movie-title">The great dictator</h2>
+               <a href="https://youtu.be/cZWpMFg379w" target="_blank"><strong>The great Dictator</strong></a>
+            <p>Years ahead of America's involvement in World War II, iconic movie star Charlie Chaplin 
+               delivered one of the finest performance of his career in this 1940 anti-war comedy satire
+               Charlie Chaplin pulled a double duty as both a war veteran/jewish barber and a brutal 
+               fascist dictator hellbent on spreading his anti-semitic beliefs. Chaplin wrote, dictated,
+               produced and starred in this Oscar-nominated film which is deemed as one of the greatest 
+               and most historically significant comedies ever created.</p>
+        </div>
+    </div>
+
+    <div class= "box-container">
+        <div class= "box">
+         <a href="https://www.youtube.com/watch?v=" target= "_blank"></a>   
+            <img src="images/philadelphiastory.png" alt="The Philadelphia Story" id="movie4-thumbnail" class="image">
+                  <h2 class="movie-title">The Philadelphia Story</h2>
+            <a href="https://www.youtube.com/watch?v=4AOONxFn3Z4&pp=ygUbcGhpbGFkZWxwaGlhIHN0b3J5IHRyYWlsZXIg" target="_blank"><strong>The philadelphia story</strong></a>      
+            <p>Katherine Hepburn stars as a socialite caught in a messy love triangle in this 
+                uproarious 1940 romantic comedy. Impending nuptial of this wealthy young woman
+                becomes complicated with the arrival of her dashing ex-husband (Cary Grant) alongside a gossip 
+                magazine reporter(James Stewart) Hepburn's character was based on the life and antics of famed
+                Philadelphia socialiteHelen Hope Montgomery Scott. The amusing flick won two academy awards 
+                including Best actor for James Stewart</p>
+            
+    
+        </div>
+    </div>
+
+    <div class="box-container video-container">
+        <div class="box">
+         <a href="https://www.youtube.com/watch?v=P27sTXSGrhQ" target= "_blank"></a>
+            <img src="images/adamsrib.png" alt="Adam's Rib" id="movie5-thumbnail" class="image">
+                 <h2 class="movie-title">Adam's Rib </h2>
+         <a href="https://www.youtube.com/watch?v=f6hhK31bD54" target="_blank"><strong>Adam's Rib</strong></a>        
+            <p>Adverized as hilarious answer to "Who wears the pants", 1949's Adam's Rib starred
+                Katherine Hepburn and Spencer Tracy as a married couple pitted against each other
+                in the courtroom as opposing counsel. This early battle of sexes was inspired by 
+                the real life case of William and Dorothy Whitney. The film was nominated for both  
+                the Academy Awards and the Golden Globes.</p>
+            
+        </div>
+            
+     </div>
+            
+      <script>
+        document.getElementById('movie1-thumbnail').addEventListener('click', function() {
+        window.open('https://www.youtube.com/watch?v=2IZbu5ktj_M', '_blank');
+       }); 
+        document.getElementById('movie2-thumbnail').addEventListener('click', function() {
+        window.open('https://www.youtube.com/watch?v=VJmOjFfvBKc', '_blank');
+       }); 
+        document.getElementById('movie3-thumbnail').addEventListener('click', function() {
+        window.open('https://www.youtube.com/watch?v=WX5L-JcGjEE', '_blank');
+       }); 
+        document.getElementById('movie4-thumbnail').addEventListener('click', function() {
+        window.open('https://www.youtube.com/watch?v=I-RrVLbC-q4', '_blank');
+       });    
+        document.getElementById('movie5-thumbnail').addEventListener('click', function() {
+        window.open('https://www.youtube.com/watch?v=P27sTXSGrhQ', '_blank');
+       });
+       document.getElementById('movie6-thumbnail').addEventListener('click', function() {
+        window.open('https://www.youtube.com/watch?v=6af1dAc9rXo&t=7s', '_blank');
+       }); 
+       document.getElementById('movie7-thumbnail').addEventListener('click', function() {
+        window.open('https://www.youtube.com/watch?v=2IZbu5ktj_M', '_blank');
+       }); 
+       document.getElementById('movie8-thumbnail').addEventListener('click', function() {
+        window.open('https://www.youtube.com/watch?v=2IZbu5ktj_M', '_blank');
+       }); 
+       document.getElementById('movie9-thumbnail').addEventListener('click', function() {
+        window.open('https://www.youtube.com/watch?v=2IZbu5ktj_M', '_blank');
+       }); 
+       document.getElementById('movie10-thumbnail').addEventListener('click', function() {
+        window.open('https://www.youtube.com/watch?v=2IZbu5ktj_M', '_blank');
+       }); 
+       document.getElementById('movie11-thumbnail').addEventListener('click', function() {
+        window.open('https://www.youtube.com/watch?v=2IZbu5ktj_M', '_blank');
+       }); 
+       document.getElementById('movie12-thumbnail').addEventListener('click', function() {
+        window.open('https://www.youtube.com/watch?v=2IZbu5ktj_M', '_blank');
+       }); 
+       document.getElementById('movie13-thumbnail').addEventListener('click', function() {
+        window.open('https://www.youtube.com/watch?v=2IZbu5ktj_M', '_blank');
+       }); 
+       document.getElementById('movie14-thumbnail').addEventListener('click', function() {
+        window.open('https://www.youtube.com/watch?v=2IZbu5ktj_M', '_blank');
+       }); 
+       document.getElementById('movie15-thumbnail').addEventListener('click', function() {
+        window.open('https://www.youtube.com/watch?v=2IZbu5ktj_M', '_blank');
+       }); 
+       document.getElementById('movie16-thumbnail').addEventListener('click', function() {
+        window.open('https://www.youtube.com/watch?v=2IZbu5ktj_M', '_blank');
+       }); 
+       document.getElementById('movie17-thumbnail').addEventListener('click', function() {
+        window.open('https://www.youtube.com/watch?v=2IZbu5ktj_M', '_blank');
+       }); 
+       document.getElementById('movie18-thumbnail').addEventListener('click', function() {
+        window.open('https://www.youtube.com/watch?v=2IZbu5ktj_M', '_blank');
+       }); 
+       document.getElementById('movie19-thumbnail').addEventListener('click', function() {
+        window.open('https://www.youtube.com/watch?v=2IZbu5ktj_M', '_blank');
+       }); 
+       document.getElementById('movie20-thumbnail').addEventListener('click', function() {
+        window.open('https://www.youtube.com/watch?v=2IZbu5ktj_M', '_blank');
+       }); 
+       document.getElementById('movie21-thumbnail').addEventListener('click', function() {
+        window.open('https://www.youtube.com/watch?v=2IZbu5ktj_M', '_blank');
+       }); 
+       document.getElementById('movie22-thumbnail').addEventListener('click', function() {
+        window.open('https://www.youtube.com/watch?v=2IZbu5ktj_M', '_blank');
+       }); 
+       document.getElementById('movie23-thumbnail').addEventListener('click', function() {
+        window.open('https://www.youtube.com/watch?v=2IZbu5ktj_M', '_blank');
+       }); 
+       document.getElementById('movie24-thumbnail').addEventListener('click', function() {
+        window.open('https://www.youtube.com/watch?v=2IZbu5ktj_M', '_blank');
+       }); 
+       document.getElementById('movie25-thumbnail').addEventListener('click', function() {
+        window.open('https://www.youtube.com/watch?v=2IZbu5ktj_M', '_blank');
+       }); 
+     </script>
+  
+     <script>
+   const thumbnail = document.getElementById("thumbnail");
+    const video = document.getElementById("video");
+
+    thumbnail.addEventListener("click", () => {
+        thumbnail.style.display = "none";
+        video.style.display = "block";
+        video.play().catch(e => {
+            console.error("Error attempting to play video: ", e);
+        }); 
+    });
+     /* When the video ends, hide it and show the thumbnail
+    video.addEventListener('ended', () => {
+        video.style.display = "none";
+        thumbnail.style.display = "block";
+
+    // Error handling for video loading issues
+    video.addEventListener('error', (event) => {
+        console.error("Error loading video: ", event);
+    });*/
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

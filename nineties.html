@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 10px;
+            margin-top: 20px;
+            background-color:beige
+        }
+
+        .container {
+            text-align: center;
+            grid-column: span 5; /* Span all columns */
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            background-color: rgb(11, 11, 10);
+            color: gold
+        }
+      
+        h2 {
+            margin-bottom: 20px;
+            background-color: black;
+            color: gold;
+        }
+         /* Add a common class for all h2 elements */
+        .movie-title {
+            margin-bottom: 20px;
+            background-color: black;
+            color: gold;
+            font-size: 18px;
+         
+        }
+        .box-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background-color:lightblue;
+            color: black;
+        }
+        .header {
+            align-items: center;
+        }
+
+        .box {
+            width: 180px;
+            background-color: lightblue;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 12px;
+            padding: 10px; /* Add padding for spacing between image and text */
+        }
+                
+        .centered-nav {
+          display:flex;
+          justify-content: center;
+          margin-top: 20px;
+          margin-left: 80px;
+          gap: 8px;
+          
+          
+    }    
+
+        .image {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .image {
+            cursor: pointer;
+        }
+        .video-container {
+            position: relative;
+        }
+
+        #video {
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+
+        #thumbnail {
+            cursor: pointer;
+        }
+
+        /* Adjust the text box to expand based on content */
+        .text-box {
+            flex-grow: 1;
+            text-align: center;           
+            padding:2px; /* Add padding for spacing between text and box */
+        }
+        #box2 .text-box {
+            flex-grow: 1;
+            text-align: center;
+            padding: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+    <div class="centered-nav">
+      <button type="button" class="btn btn-primary" onclick="openFile('forties')">1940s</button>
+      <button type="button" class="btn btn-secondary" onclick="openFile('fifties')">1950s</button>
+      <button type="button" class="btn btn-success" onclick="openFile('sixties')">1960s</button>
+      <button type="button" class="btn btn-danger" onclick="openFile('seventies')">1970s</button>
+      <button type="button" class="btn btn-warning" onclick="openFile('eighties')">1980s</button>
+      <button type="button" class="btn btn-primary" onclick="openFile('nineties')">1990s</button>
+      <button type="button" class="btn btn-primary" onclick="openFile('index')">RETURN</button>
+      <button id="play-audio">Play Audio</button>
+      <button id="stop-audio">Stop Audio</button>
+    </div>
+    <script>
+      function openFile(buttonName) {
+        window.location.href = buttonName + '.html';
+      }
+    </script>
+  </div>
+
+    <div class="container">
+        <h1>Top Comedy Movies of 1990s</h1>
+    </div>
+
+    <!-- First row -->
+    <div class="box-container">
+        <div class="box">
+            <a href="https://www.youtube.com/watch?v=Fmih-zWIjGY"  target="_blank"></a>
+            <img src="images/homealone.png" alt="Home Alone" id="movie26-thumbnail" class="image">
+            
+                <h2 class="movie-title">Home Alone</h2>
+                <a href="https://www.youtube.com/watch?v=m8RVpPri4BA" target="_blank"><strong>Home Alone</strong></a>
+                <p>When bratty 8-year-old Kevin McCallister (Macaulay Culkin) acts out the night before a family trip
+                   to Paris, his mother (Catherine O'Hara) makes him sleep in the attic. After the McCallisters mistakenly
+                   leave for the airport without Kevin, he awakens to an empty house and assumes his wish to have no family 
+                   has come true. But his excitement sours when he realizes that two con men (Joe Pesci, Daniel Stern) plan 
+                   to rob the McCallister residence, and that he alone must protect the family home.
+
+..              </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="box-container">
+        <div class="box">
+            <a href="https://www.youtube.com/watch?v=xof2LkhAFGU" target= "_blank"></a>
+            <img src="images/dirtyrottenscoundrels.png" alt="Dirty Rotten Scoundrels" id="movie27-thumbnail" class="image">
+            <div class="text-box" id="box2">
+                <h2 class="movie-title">Dirty Rotten Scoundrels</h2>
+                <a href="https://www.youtube.com/watch?v=x6V_q0Z0d-U" target="_blank"><strong>Dirty Rotten Scoundrels</strong></a>
+                <p>In THE PINK PANTHER, Sir Charles Lytton (David Niven), a globetrotting bachelor who is in secret 
+                    a super-thief called the Phantom, has been making fools of police around the world for 15 years. 
+                    No fool is bigger than Inspector Clouseau, whose been pursuing the Phantom all that time, always 
+                    one step behind. That's because Clouseau's adored wife Simone (Capucine) is Lytton's secret accomplice 
+                    -- and mistress. Clouseau correctly reasons the Phantom's next target will be the Pink Panther diamond 
+                    worn by Indian princess Dala (Claudia Cardinale), who is due to visit a ski resort in the Alps. Clouseau 
+                    travels there to catch the thief, and brings Simone with him. Sir Charles shows up and begins using his 
+                    considerable charm on Princess Dala. Bumbling Clouseau misses all the signs his treacherous wife has no 
+                    interest in him, but he does gradually suspect Sir Charles. To complicate matters, Sir Charles' nephew 
+                    pink panther(Robert Wagner) and turns out to be a con artist who also plans to steal the Pink Panther, during a costume ball.</p>
+            </div>
+        </div>
+    </div>    
+    <div class="box-container">
+        <div class="box">
+            <a href="https://youtu.be/W7YoxrKa4f0" target= "_blank"></a>
+            <img src="images/mycousinvinny.png" alt="My Cousin Vinny" id="movie28-thumbnail" class="image">
+               <h2 class="movie-title">My Cousin Vinny</h2>
+               <a href="https://www.youtube.com/watch?v=VAwYfh5OCnk" target="_blank"><strong>My Cousin Vinny </strong></a>
+            <p>New York lawyer Vinny has never won a case. When his teenage cousin Bill and his friend Stan are accused 
+                of murder in a backwater Alabama town, it's up to the nervous Vinny to save him from jail, even though 
+                he's only ever tried personal injury cases before, and none of them successfully. My Cousin Vinny" is 
+                generally praised for its accurate portrayal of courtroom procedures and legal tactics. Many legal 
+                professionals and law professors have used the film as a teaching tool in law schools. My Cousin Vinny 
+                proves that well-written and superbly delivered jokes belong in comedies. When Tomei is on screen,
+                even the jury wakes up. Vinny is a winning character and Pesci's performance as the 
+                beleaguered litigant is terrific - cranked yet cuddly.
+</p>
+        </div>
+    </div>
+
+
+    <div class="box-container">
+        <div class="box">
+            <a href="https://www.youtube.com/watch?v=EElmapouc0c" target= "_blank"></a>
+            <img src="images/foolsgold.png" alt="Fool's Gold" id="movie29-thumbnail" class="image">            
+            
+                  <h2 class="movie-title">Fool's Gold</h2>
+                  <a href="https://www.youtube.com/watch?v=EnKGywc28qg" target="_blank"><strong>Fool's Gold</strong></a>
+            <p>Treasure hunter Ben "Finn" Finnegan (Matthew McConaughey) has sunk his marriage to Tess (Kate Hudson) and 
+                his trusty boat in his obsessive quest to find the legendary Queen's Dowry. When he finds a vital clue 
+                that may finally pinpoint the treasure's whereabouts, he drags Tess and her boss, billionaire Nigel Honeycutt, 
+                along on the hunt. But Finn is not the only one interested in the gold; his former mentor-turned-enemy 
+                Moe Fitch (Ray Winstone) will stop at nothing to beat him to it.</p>
+        </div>
+    </div>
+
+    <div class="box-container video-container">
+        <div class="box">
+            <a href="https://www.youtube.com/watch?v=73VHu-QZ6fs" target= "_blank"></a>
+            <img src="images/romancingthestone.png" alt="Romancing the stone" id="movie30-thumbnail" class="image">
+                 <h2 class="movie-title">Romancing the stone </h2>
+                 <a href="https://www.youtube.com/watch?v=qgHt0JmP6sU" target="_blank"><strong>Romancing the stone</strong></a>
+            <p>A dowdy romantic-adventure writer is hurled into a real-life adventure in the Colombian jungle in order to save 
+                her sister, who will be killed if a treasure map is not delivered to her captors. She is helped out by a brash 
+                mercenary, and together they search for the priceless gem located in the map.</p>
+        </div>
+           
+    </div>
+            
+        </div>
+        <a href="#">Back to top</a>
+        </div>
+    <script>
+        document.getElementById('movie26-thumbnail').addEventListener('click', function() {
+        window.open('https://www.youtube.com/watch?v=Fmih-zWIjGY', '_blank');
+       }); 
+       document.getElementById('movie27-thumbnail').addEventListener('click', function() {
+        window.open('https://www.youtube.com/watch?v=xof2LkhAFGU', '_blank');
+       }); 
+       document.getElementById('movie28-thumbnail').addEventListener('click', function() {
+        window.open('https://youtu.be/W7YoxrKa4f0', '_blank');
+       }); 
+       document.getElementById('movie29-thumbnail').addEventListener('click', function() {
+        window.open('https://www.youtube.com/watch?v=EElmapouc0c', '_blank');
+       }); 
+       document.getElementById('movie30-thumbnail').addEventListener('click', function() {
+        window.open('https://www.youtube.com/watch?v=73VHu-QZ6fs', '_blank');
+       }); 
+        
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

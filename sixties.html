@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 10px;
+            margin-top: 20px;
+            background-color:beige
+        }
+
+        .container {
+            text-align: center;
+            grid-column: span 5; /* Span all columns */
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            background-color: rgb(11, 11, 10);
+            color: gold
+        }
+      
+        h2 {
+            margin-bottom: 20px;
+            background-color: black;
+            color: gold;
+        }
+         /* Add a common class for all h2 elements */
+        .movie-title {
+            margin-bottom: 20px;
+            background-color: black;
+            color: gold;
+            font-size: 18px;
+         
+        }
+        .box-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background-color:lightblue;
+            color: black;
+        }
+        .header {
+            align-items: center;
+        }
+
+        .box {
+            width: 180px;
+            background-color: lightblue;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 12px;
+            padding: 10px; /* Add padding for spacing between image and text */
+        }
+                
+        .centered-nav {
+          display:flex;
+          justify-content: center;
+          margin-top: 20px;
+          margin-left: 80px;
+          gap: 8px;
+          
+          
+    }    
+
+        .image {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .image {
+            cursor: pointer;
+        }
+        .video-container {
+            position: relative;
+        }
+
+        #video {
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+
+        #thumbnail {
+            cursor: pointer;
+        }
+
+        /* Adjust the text box to expand based on content */
+        .text-box {
+            flex-grow: 1;
+            text-align: center;           
+            padding:2px; /* Add padding for spacing between text and box */
+        }
+        #box2 .text-box {
+            flex-grow: 1;
+            text-align: center;
+            padding: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+    <div class="centered-nav">
+      <button type="button" class="btn btn-primary" onclick="openFile('forties')">1940s</button>
+      <button type="button" class="btn btn-secondary" onclick="openFile('fifties')">1950s</button>
+      <button type="button" class="btn btn-success" onclick="openFile('sixties')">1960s</button>
+      <button type="button" class="btn btn-danger" onclick="openFile('seventies')">1970s</button>
+      <button type="button" class="btn btn-warning" onclick="openFile('eighties')">1980s</button>
+      <button type="button" class="btn btn-primary" onclick="openFile('nineties')">1990s</button>
+      <button type="button" class="btn btn-primary" onclick="openFile('index')">RETURN</button>
+      <button id="play-audio">Play Audio</button>
+      <button id="stop-audio">Stop Audio</button>
+    </div>
+    <script>
+      function openFile(buttonName) {
+        window.location.href = buttonName + '.html';
+      }
+    </script>
+  </div>
+
+    <div class="container">
+        <h1>Top Comedy Movies of 1960s</h1>
+    </div>
+
+    <!-- First row -->
+    <div class="box-container">
+        <div class="box">
+            <a href="https://www.youtube.com/watch?v=E0HVZHMGXsM"  target="_blank"></a>
+            <img src="images/parenttrap.png" alt="The Parent trap" id="movie11-thumbnail" class="image">
+            
+                <h2 class="movie-title">The parent trap</h2>
+                <a href="https://www.youtube.com/watch?v=ebRTuXell2Q" target="_blank"><strong>Parent trap</strong></a>
+                <p>Two identical twin sisters, separated at birth by their parents' divorce, are reunited years later
+                    at a summer camp, where they scheme to bring their parents back together. The girls, one of whom 
+                    has been living with their mother and the other with their father, switch places after camp and go 
+                    to work on their plan, the first objective being to scare off a gold-digger pursuing their father.
+
+..              </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="box-container">
+        <div class="box">
+            <a href="https://www.youtube.com/watch?v=HokdJyD605U" target= "_blank"></a>
+            <img src="images/pinkpanther.png" alt="Pink Panther" id="movie12-thumbnail" class="image">
+            <div class="text-box" id="box2">
+                <h2 class="movie-title">Pink Panther</h2>
+                <a href="https://www.youtube.com/watch?v=rE9I746m0IQ" target="_blank"><strong>Pink Panther</strong></a>
+                <p>In THE PINK PANTHER, Sir Charles Lytton (David Niven), a globetrotting bachelor who is in secret 
+                    a super-thief called the Phantom, has been making fools of police around the world for 15 years. 
+                    No fool is bigger than Inspector Clouseau, whose been pursuing the Phantom all that time, always 
+                    one step behind. That's because Clouseau's adored wife Simone (Capucine) is Lytton's secret accomplice 
+                    -- and mistress. Clouseau correctly reasons the Phantom's next target will be the Pink Panther diamond 
+                    worn by Indian princess Dala (Claudia Cardinale), who is due to visit a ski resort in the Alps. Clouseau 
+                    travels there to catch the thief, and brings Simone with him. Sir Charles shows up and begins using his 
+                    considerable charm on Princess Dala. Bumbling Clouseau misses all the signs his treacherous wife has no 
+                    interest in him, but he does gradually suspect Sir Charles. To complicate matters, Sir Charles' nephew 
+                    pink panther(Robert Wagner) and turns out to be a con artist who also plans to steal the Pink Panther, during a costume ball.</p>
+            </div>
+        </div>
+    </div>    
+    <div class="box-container">
+        <div class="box">
+            <a href="https://www.youtube.com/watch?v=nXjtW0n33T4" target= "_blank"></a>
+            <img src="images/greatrace.png" alt="The Great Race" id="movie13-thumbnail" class="image">
+               <h2 class="movie-title">The Great Race</h2>
+               <a href="https://www.youtube.com/watch?v=-aFQ8y_YvvM" target="_blank"><strong>The Great Race </strong></a>
+            <p>Academy Award winner Jack Lemmon, Tony Curtis and Natalie Wood star in a slapstick farce about a 22,000-mile
+                 road race from New York to Paris set in 1908. Dastardly, black-garbed Dr. Fate (Lemmon) dares the world's 
+                 greatest hero, The Great Leslie (Curtis), to the race across the Wild West, through frozen Alaska and into 
+                 the Kingdom of Carpania. Fate sets a series of nefarious traps for Leslie, but neither plans on the indefatigable 
+                 suffragette Maggie DuBois--the object of both Leslie's a Fate's affection--to enter the race, determined to strike
+                 a blow for feminism.
+</p>
+        </div>
+    </div>
+
+
+    <div class="box-container">
+        <div class="box">
+            <a href="https://www.youtube.com/watch?v=7VO2NcQl2-g" target= "_blank"></a>
+            <img src="images/oddcouple.png" alt="The Odd Couple" id="movie14-thumbnail" class="image">            
+            
+                  <h2 class="movie-title">The Odd Couple</h2>
+                  <a href="https://www.youtube.com/watch?v=iiviXn2ylMo" target="_blank"><strong>The Odd Couple</strong></a>
+            <p>The Odd Couple" is a classic comedy that has endured for decades and remains a beloved piece 
+                of American entertainment. Based on Neil Simon's successful play, the film adaptation, released
+                 in 1968, directed by Gene Saks, stars Jack Lemmon as Felix Ungar and Walter Matthau as Oscar Madison.
+                "The Odd Couple" is a comedic gem that stands as a testament to the timeless appeal of Neil Simon's wit and 
+                the chemistry between its two lead actors. Jack Lemmon and Walter Matthau deliver outstanding performances 
+                as the mismatched roommates, Felix and Oscar, respectively. Lemmon's portrayal of the neurotic, 
+                obsessive-compulsive Felix is both endearing and hilarious, while Matthau's Oscar, the slobbish, 
+                easygoing sportswriter, is the perfect foil</p>
+        </div>
+    </div>
+
+    <div class="box-container video-container">
+        <div class="box">
+            <a href="https://www.youtube.com/watch?v=upcazMabOKI" target= "_blank"></a>
+            <img src="images/producers.png" alt="The Producers" id="movie15-thumbnail" class="image">
+                 <h2 class="movie-title">The Producers </h2>
+                 <a href="https://www.youtube.com/watch?v=7YDpQIveqsU" target="_blank"><strong>The Producers</strong></a>
+            <p>Down and out producer Max Bialystock (Zero Mostel), who was once the toast of Broadway, 
+                trades sexual favors with old ladies for cash contributions. Max's new accountant 
+                Leo Bloom (Gene Wilder), offhandedly muses that if Max found investors for a new production 
+                that turned into a flop, he could legally keep all the extra money. The duo begins to put together 
+                the worst play possible, titled "Springtime for Hitler", with a terrible director and a hippie-freak star.
+
+            </div>
+            <d
+            </div>
+            </p>
+        </div>
+        <a href="#">Back to top</a>
+    <script>
+        document.getElementById('movie11-thumbnail').addEventListener('click', function() {
+        window.open('https://www.youtube.com/watch?v=E0HVZHMGXsM', '_blank');
+       }); 
+       document.getElementById('movie12-thumbnail').addEventListener('click', function() {
+        window.open('https://www.youtube.com/watch?v=HokdJyD605U', '_blank');
+       }); 
+       document.getElementById('movie13-thumbnail').addEventListener('click', function() {
+        window.open('https://www.youtube.com/watch?v=nXjtW0n33T4', '_blank');
+       }); 
+       document.getElementById('movie14-thumbnail').addEventListener('click', function() {
+        window.open('https://www.youtube.com/watch?v=7VO2NcQl2-g', '_blank');
+       }); 
+       document.getElementById('movie15-thumbnail').addEventListener('click', function() {
+        window.open('https://www.youtube.com/watch?v=upcazMabOKI', '_blank');
+       }); 
+        
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

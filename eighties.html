@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 10px;
+            margin-top: 20px;
+            background-color:beige
+        }
+
+        .container {
+            text-align: center;
+            grid-column: span 5; /* Span all columns */
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            background-color: rgb(11, 11, 10);
+            color: gold
+        }
+      
+        h2 {
+            margin-bottom: 20px;
+            background-color: black;
+            color: gold;
+        }
+         /* Add a common class for all h2 elements */
+        .movie-title {
+            margin-bottom: 20px;
+            background-color: black;
+            color: gold;
+            font-size: 18px;
+         
+        }
+        .box-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background-color:lightblue;
+            color: black;
+        }
+        .header {
+            align-items: center;
+        }
+
+        .box {
+            width: 180px;
+            background-color: lightblue;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 12px;
+            padding: 10px; /* Add padding for spacing between image and text */
+        }
+                
+        .centered-nav {
+          display:flex;
+          justify-content: center;
+          margin-top: 20px;
+          margin-left: 80px;
+          gap: 8px;
+          
+          
+    }    
+
+        .image {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .image {
+            cursor: pointer;
+        }
+        .video-container {
+            position: relative;
+        }
+
+        #video {
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+
+        #thumbnail {
+            cursor: pointer;
+        }
+
+        /* Adjust the text box to expand based on content */
+        .text-box {
+            flex-grow: 1;
+            text-align: center;           
+            padding:2px; /* Add padding for spacing between text and box */
+        }
+        #box2 .text-box {
+            flex-grow: 1;
+            text-align: center;
+            padding: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+    <div class="centered-nav">
+      <button type="button" class="btn btn-primary" onclick="openFile('forties')">1940s</button>
+      <button type="button" class="btn btn-secondary" onclick="openFile('fifties')">1950s</button>
+      <button type="button" class="btn btn-success" onclick="openFile('sixties')">1960s</button>
+      <button type="button" class="btn btn-danger" onclick="openFile('seventies')">1970s</button>
+      <button type="button" class="btn btn-warning" onclick="openFile('eighties')">1980s</button>
+      <button type="button" class="btn btn-primary" onclick="openFile('nineties')">1990s</button>
+      <button type="button" class="btn btn-primary" onclick="openFile('index')">RETURN</button>
+      <button id="play-audio">Play Audio</button>
+      <button id="stop-audio">Stop Audio</button>
+    </div>
+    <script>
+      function openFile(buttonName) {
+        window.location.href = buttonName + '.html';
+      }
+    </script>
+  </div>
+
+    <div class="container">
+        <h1>Top Comedy Movies of 1980s</h1>
+    </div>
+
+    <!-- First row -->
+    <div class="box-container">
+        <div class="box">
+            <a href="https://www.youtube.com/watch?v=quGmWh-sqhE"  target="_blank"></a>
+            <img src="images/seemslikeoldtimes.png" alt="Seems like old times" id="movie21-thumbnail" class="image">
+            
+                <h2 class="movie-title">Seems like old times</h2>
+                <a href="https://www.youtube.com/watch?v=ojtOX2GNeeQ" target="_blank"><strong>Seems like old times</strong></a>
+                <p>Nick Gardenia (Chevy Chase) is a writer who has moved to a cabin in the California mountains to work on a novel.
+                     He is kidnapped by a pair of criminals and forced into robbing a bank. On the run from the law, Nick seeks 
+                     assistance from his ex-wife, Glenda (Goldie Hawn), a big-hearted lawyer. Knowing he would never commit a crime, 
+                     she lets him stay at her house despite the fact that her husband, Ira (Charles Grodin), a district attorney, 
+                     is throwing a party for law enforcement officials.
+..              </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="box-container">
+        <div class="box">
+            <a href="https://www.youtube.com/watch?v=07pPmCfKi3U" target= "_blank"></a>
+            <img src="images/airplane.png" alt="Airplane" id="movie22-thumbnail" class="image">
+            <div class="text-box" id="box2">
+                <h2 class="movie-title">Airplane</h2>
+                <a href="https://www.youtube.com/watch?v=ksljlXvKtic" target="_blank"><strong>Airplane</strong></a>
+                <p>A handful of films become so successful they birth entire sub-genres, and while Airplane! was certainly
+                     the offspring of any number of zany, cartoonish parents, there’s never been a brat like it, before or 
+                     since. On the surface it’s a parody of the (then) trendy disaster-film craze of the ‘70s, but anyone
+                      who has memorized its acrobatic dialogue and merciless pacing knows Jim Abrahams and the Zucker Brothers
+                       permanently upped the ante on puns and sight gags. South Park’s Trey Parker and Matt Stone have 
+                       leaned on surreal, out-of-nowhere visual gags mixed with unapologetic race, gender and religion 
+                       taboos. But as a whirlwind of divine corniness that rips the stuffing out of everything around it, 
+                       Airplane! remains uniquely devastating.
+</p>
+            </div>
+        </div>
+    </div>    
+    <div class="box-container">
+        <div class="box">
+            <a href="https://www.youtube.com/watch?v=UGkyFs_SkIk" target= "_blank"></a>
+            <img src="images/caddyshack.png" alt="Caddyshack" id="movie23-thumbnail" class="image">
+               <h2 class="movie-title">Caddyshack</h2>
+               <a href="https://www.youtube.com/watch?v=ROfwYphXTC4" target="_blank"><strong>Caddyshack </strong></a>
+            <p>"Caddyshack" stands out in the realm of ensemble comedies, not just for its influence but also for its
+                unique celebration of misfits and outcasts. While it shares an anarchic spirit with contemporaries like 
+                "Animal House" and "Blues Brothers," and sits alongside Harold Ramis' other works like "Vacation," it 
+                distinguishes itself with its dynamic blend of scripted and improvisational filmmaking. The film, rooted 
+                in writer Brian Doyle-Murray's real-life experiences, showcases comedic brilliance in every scene. 
+                Key performances by Chevy Chase, Bill Murray, and Rodney Dangerfield capture the essence of the movie's irreverent, 
+                youthful spirit. This combination of factors cements "Caddyshack" as the quintessential comedy of the late 70s and 80s.
+
+</p>
+        </div>
+    </div>
+
+
+    <div class="box-container">
+        <div class="box">
+            <a href="https://youtu.be/5HL0HpZ9ESc" target= "_blank"></a>
+            <img src="images/tradingplaces.png" alt="TradingPlaces" id="movie24-thumbnail" class="image">            
+            
+                  <h2 class="movie-title">TradingPlaces</h2>
+                  <a href="https://www.youtube.com/watch?v=bKYpVrO6YVU" target="_blank"><strong>TradingPlaces</strong></a>
+            <p>Upper-crust executive Louis Winthorpe III (Dan Aykroyd) and down-and-out hustler Billy Ray Valentine 
+                (Eddie Murphy) are the subjects of a bet by successful brokers Mortimer (Don Ameche) and 
+                Randolph Duke (Ralph Bellamy). An employee of the Dukes, Winthorpe is framed by the brothers for a crime 
+                he didn't commit, with the siblings then installing the street-smart Valentine in his position. 
+                When Winthorpe and Valentine uncover the scheme, they set out to turn the tables on the Dukes.
+</p>
+        </div>
+    </div>
+
+    <div class="box-container video-container">
+        <div class="box">
+            <a href="https://www.youtube.com/watch?v=cEjo0ajod1M" target= "_blank"></a>
+            <img src="images/nakedgun.png" alt="Naked Gun" id="movie25-thumbnail" class="image">
+                 <h2 class="movie-title">Naked Gun </h2>
+                 <a href="https://www.youtube.com/watch?v=XASknThX_tg" target="_blank"><strong>Naked Gun</strong></a>
+            <p>Frank Drebin (Leslie Nielsen), a rather clueless police detective, tries to foil a plot 
+                to turn innocent people into assassins through mind control. After his partner, 
+                Norberg (O.J. Simpson), is shot, Frank sets out to find the culprit, leading him to business 
+                tycoon Vincent Ludwig (Ricardo Montalban). However, Frank has no evidence until he meets 
+                Jane Spencer (Priscilla Presley), Ludwig's assistant. She knows nothing about Ludwig's devious 
+                plans, but falls for Frank and agrees to help him.
+
+            </div>
+            <d
+            </div>
+            </p>
+        </div>
+        <a href="#">Back to top</a>
+    <script>
+        document.getElementById('movie21-thumbnail').addEventListener('click', function() {
+        window.open('https://www.youtube.com/watch?v=quGmWh-sqhE', '_blank');
+       }); 
+       document.getElementById('movie22-thumbnail').addEventListener('click', function() {
+        window.open('https://www.youtube.com/watch?v=07pPmCfKi3U', '_blank');
+       }); 
+       document.getElementById('movie23-thumbnail').addEventListener('click', function() {
+        window.open('https://www.youtube.com/watch?v=UGkyFs_SkIk', '_blank');
+       }); 
+       document.getElementById('movie24-thumbnail').addEventListener('click', function() {
+        window.open('https://youtu.be/5HL0HpZ9ESc', '_blank');
+       }); 
+       document.getElementById('movie25-thumbnail').addEventListener('click', function() {
+        window.open('https://www.youtube.com/watch?v=cEjo0ajod1M', '_blank');
+       }); 
+        
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

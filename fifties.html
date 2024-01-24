@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 10px;
+            margin-top: 20px;
+            background-color:beige
+        }
+
+        .container {
+            text-align: center;
+            grid-column: span 5; /* Span all columns */
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            background-color: rgb(11, 11, 10);
+            color: gold
+        }
+      
+        h2 {
+            margin-bottom: 20px;
+            background-color: black;
+            color: gold;
+        }
+         /* Add a common class for all h2 elements */
+        .movie-title {
+            margin-bottom: 20px;
+            background-color: black;
+            color: gold;
+            font-size: 18px;
+         
+        }
+        .box-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background-color:lightblue;
+            color: black;
+        }
+        .header {
+            align-items: center;
+        }
+
+        .box {
+            width: 180px;
+            background-color: lightblue;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 12px;
+            padding: 10px; /* Add padding for spacing between image and text */
+        }
+                
+        .centered-nav {
+          display:flex;
+          justify-content: center;
+          margin-top: 20px;
+          margin-left: 80px;
+          gap: 8px;
+          
+          
+    }    
+
+        .image {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .image {
+            cursor: pointer;
+        }
+        .video-container {
+            position: relative;
+        }
+
+        #video {
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+
+        #thumbnail {
+            cursor: pointer;
+        }
+
+        /* Adjust the text box to expand based on content */
+        .text-box {
+            flex-grow: 1;
+            text-align: center;           
+            padding:2px; /* Add padding for spacing between text and box */
+        }
+        #box2 .text-box {
+            flex-grow: 1;
+            text-align: center;
+            padding: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+    <div class="centered-nav">
+      <button type="button" class="btn btn-primary" onclick="openFile('forties')">1940s</button>
+      <button type="button" class="btn btn-secondary" onclick="openFile('fifties')">1950s</button>
+      <button type="button" class="btn btn-success" onclick="openFile('sixties')">1960s</button>
+      <button type="button" class="btn btn-danger" onclick="openFile('seventies')">1970s</button>
+      <button type="button" class="btn btn-warning" onclick="openFile('eighties')">1980s</button>
+      <button type="button" class="btn btn-primary" onclick="openFile('nineties')">1990s</button>
+      <button type="button" class="btn btn-primary" onclick="openFile('index')">RETURN</button>
+      <button id="play-audio">Play Audio</button>
+      <button id="stop-audio">Stop Audio</button>
+    </div>
+    <script>
+      function openFile(buttonName) {
+        window.location.href = buttonName + '.html';
+      }
+    </script>
+  </div>
+
+    <div class="container">
+        <h1>Top Comedy Movies of 1950s</h1>
+    </div>
+
+    <!-- First row -->
+    <div class="box-container">
+        <div class="box">
+            <a href="https://www.youtube.com/watch?v=6af1dAc9rXo"  target="_blank"></a>
+            <img src="images/romanholiday.png" alt="Roman Holiday" id="movie6-thumbnail" class="image">
+            
+                <h2 class="movie-title">Roman Holiday</h2>
+                <a href="https://www.youtube.com/watch?v=Z3KC_oJBmuY&pp=ygUVcm9tYW4gaG9saWRheSB0cmFpbGVy" target="_blank"><strong>Roman Holiday</strong></a>
+                <p>When it came to movies in the 1950s, comedy and romance were
+                     often mentioned in the same breath. A little chemistry goes
+                      a long way in highlighting a film’s funnier moments, and in
+                       this romantic comedy starring Audrey Hepburn and Gregory Peck, 
+                       the laughs come with the love. Reporter Joe Bradley sees a
+                        golden opportunity when Princess Ann escapes her royal duties
+                         to live life and the two begin falling in love. 
+                         A box office hit, “Roman Holiday” won 3 Oscars - and our hearts.
+
+..</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="box-container">
+        <div class="box">
+            <a href="https://www.youtube.com/watch?v=bXcg-cOpu1Y" target= "_blank"></a>
+            <img src="images/courtjester.png" alt="Court Jester" id="movie7-thumbnail" class="image">
+            <div class="text-box" id="box2">
+                <h2 class="movie-title">Court Jester</h2>
+                <a href="https://www.youtube.com/watch?v=UnvAxsIHsLI" target="_blank"><strong>Court Jester</strong></a>
+                <p>Talk about a tongue twister! Before there was “Robin Hood: Men in Tights,” there was “The Court Jester.” 
+                    In this madcap comedy, an unwitting spy infiltrates the ranks of the king as a jester in order to usurp
+                     him and reveal the true ruler. Thrilling stuff, right? The only drawback is that Hawkins, the Jester, 
+                    isn’t quite up to the task. But with the help of a powerful witch, he manages to hold his own – and get us laughing!
+.</p>
+            </div>
+        </div>
+    </div>
+    <div class="box-container">
+        <div class="box">
+            <a href="https://www.youtube.com/watch?v=V2WBBkzF0dY" target= "_blank"></a>
+            <img src="images/Sorrowful Jones.png" alt="Sorrowful Jones" id="movie8-thumbnail" class="image">
+               <h2 class="movie-title">Sorrowful Jones</h2>
+               <a href="https://youtu.be/f8IZGi_SSjc?list=PLBFa2yUBFRr4iTTTRwuEerElAaZ-otL3N" target="_blank"><strong>Sorrowful Jones </strong></a>
+            <p>Years ahead of America's involvement in World War II, iconic movie star Charlie Chaplin 
+               delivered one of the finest performance of his career in this 1940 anti-war comedy satire
+               Charlie Chaplin pulled a double duty as both a war veteran/jewish barber and a brutal 
+               fascist dictator hellbent on spreading his anti-semitic beliefs. Chaplin wrote, dictated,
+               produced and starred in this Oscar-nominated film which is deemed as one of the greatest 
+               and most historically significant comedies ever created.</p>
+        </div>
+    </div>
+
+    <div class="box-container">
+        <div class="box">
+            <a href="https://www.youtube.com/watch?v=PW6nnoTGxNY" target= "_blank"></a>
+            <img src="images/philadelphiastory.png" alt="The Philadelphia Story" id="movie9-thumbnail" class="image">            
+            
+                  <h2 class="movie-title">The Philadelphia Story</h2>
+                  <a href="https://www.youtube.com/watch?v=4AOONxFn3Z4&pp=ygUdcGhpbGFkZWxwaGlhIHN0b3J5IGZ1bGwgbW92aWU%3D" target="_blank"><strong>The Philadelphia Story</strong></a>
+            <p>Katherine Hepburn stars as a socialite caught in a messy love triangle in this 
+                uproarious 1940 romantic comedy. Impending nuptial of this wealthy young woman
+                becomes complicated with the arrival of her dashing ex-husband (Cary Grant) alongside a gossip 
+                magazine reporter(James Stewart) Hepburn's character was based on the life and antics of famed
+                Philadelphia socialiteHelen Hope Montgomery Scott. The amusing flick won two academy awards 
+                including Best actor for James Stewart</p>
+        </div>
+    </div>
+
+    <div class="box-container video-container">
+        <div class="box">
+            <a href="https://www.youtube.com/watch?v=f6hhK31bD54&pp=ygURYWRhbXMgcmliIHRyYWlsZXI%3D" target= "_blank"></a>
+            <img src="images/adamsrib.png" alt="Adam's Rib" id="movie10-thumbnail" class="image">
+                 <h2 class="movie-title">Adam's Rib </h2>
+                 <a href="https://www.youtube.com/watch?v=7nqJ4eABpWA&pp=ygUJYWRhbXMgcmli" target="_blank"><strong>Adam's Rib</strong></a>
+            <p>Adverized as hilarious answer to "Who wears the pants", 1949's Adam's Rib starred
+                Katherine Hepburn and Spencer Tracy as a married couple pitted against each other
+                in the courtroom as opposing counsel. This early battle of sexes was inspired by 
+                the real life case of William and Dorothy Whitney. The film was nominated for both  
+                the Academy Awards and the Golden Globes.
+
+            </div>
+            <d
+            </div>
+            </p>
+        </div>
+        <a href="#">Back to top</a>
+    <script>
+        document.getElementById('movie6-thumbnail').addEventListener('click', function() {
+        window.open('https://www.youtube.com/watch?v=6af1dAc9rXo&t=7s', '_blank');
+       }); 
+       document.getElementById('movie7-thumbnail').addEventListener('click', function() {
+        window.open('https://www.youtube.com/watch?v=bXcg-cOpu1Y', '_blank');
+       }); 
+       document.getElementById('movie8-thumbnail').addEventListener('click', function() {
+        window.open('https://www.youtube.com/watch?v=V2WBBkzF0dY', '_blank');
+       }); 
+       document.getElementById('movie9-thumbnail').addEventListener('click', function() {
+        window.open('https://www.youtube.com/watch?v=4f2jCffBrck', '_blank');
+       }); 
+       document.getElementById('movie10-thumbnail').addEventListener('click', function() {
+        window.open('https://www.youtube.com/watch?v=f6hhK31bD54&pp=ygURYWRhbXMgcmliIHRyYWlsZXI%3D', '_blank');
+       }); 
+        
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 10px;
+            margin-top: 20px;
+            background-color:beige
+        }
+
+        .container {
+            text-align: center;
+            grid-column: span 5; /* Span all columns */
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            background-color: rgb(11, 11, 10);
+            color: gold
+        }
+      
+        h2 {
+            margin-bottom: 20px;
+            background-color: black;
+            color: gold;
+        }
+         /* Add a common class for all h2 elements */
+        .movie-title {
+            margin-bottom: 20px;
+            background-color: black;
+            color: gold;
+            font-size: 18px;
+         
+        }
+        .box-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background-color:lightblue;
+            color: black;
+        }
+        .header {
+            align-items: center;
+        }
+
+        .box {
+            width: 180px;
+            background-color: lightblue;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 12px;
+            padding: 10px; /* Add padding for spacing between image and text */
+        }
+                
+        .centered-nav {
+          display:flex;
+          justify-content: center;
+          margin-top: 20px;
+          margin-left: 80px;
+          gap: 8px;
+          
+          
+    }    
+
+        .image {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .image {
+            cursor: pointer;
+        }
+        .video-container {
+            position: relative;
+        }
+
+        #video {
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+
+        #thumbnail {
+            cursor: pointer;
+        }
+
+        /* Adjust the text box to expand based on content */
+        .text-box {
+            flex-grow: 1;
+            text-align: center;           
+            padding:2px; /* Add padding for spacing between text and box */
+        }
+        #box2 .text-box {
+            flex-grow: 1;
+            text-align: center;
+            padding: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+    <div class="centered-nav">
+      <button type="button" class="btn btn-primary" onclick="openFile('forties')">1940s</button>
+      <button type="button" class="btn btn-secondary" onclick="openFile('fifties')">1950s</button>
+      <button type="button" class="btn btn-success" onclick="openFile('sixties')">1960s</button>
+      <button type="button" class="btn btn-danger" onclick="openFile('seventies')">1970s</button>
+      <button type="button" class="btn btn-warning" onclick="openFile('eighties')">1980s</button>
+      <button type="button" class="btn btn-primary" onclick="openFile('nineties')">1990s</button>
+      <button type="button" class="btn btn-primary" onclick="openFile('index')">RETURN</button>
+      <button id="play-audio">Play Audio</button>
+      <button id="stop-audio">Stop Audio</button>
+    </div>
+    <script>
+      function openFile(buttonName) {
+        window.location.href = buttonName + '.html';
+      }
+    </script>
+  </div>
+
+    <div class="container">
+        <h1>Top Comedy Movies of 1970s</h1>
+    </div>
+
+    <!-- First row -->
+    <div class="box-container">
+        <div class="box">
+            <a href="https://www.youtube.com/watch?v=U4qIJkKy-00"  target="_blank"></a>
+            <img src="images/blazingsaddles.png" alt="Blazingsaddles" id="movie16-thumbnail" class="image">
+            
+                <h2 class="movie-title">Blazingsaddles</h2>
+                <a href="https://www.youtube.com/watch?v=BwPbW0NaRyw" target="_blank"><strong>Blazingsaddles</strong></a>
+                <p>Blazing Saddles" is more than just a comedy with a heart; it's a film that fearlessly tackles enduring 
+                   truths about race, gender, politics, and more with unmatched boldness. Mel Brooks, alongside talents like 
+                   Richard Pryor and Gene Wilder, crafted a movie that not only serves as the quintessential Western comedy 
+                   but also as a timeless commentary on America's complexities. Its brilliant writing, stellar performances, 
+                   and daring humor remain relevant, echoing the societal struggles of both the past and present. As a film that 
+                   also reflects on the nature of filmmaking itself, it stands out in Brooks' impressive repertoire, which includes 
+                   classics like "The Producers" and "Young Frankenstein." </p>
+            
+        </div>
+    </div>
+
+    <div class="box-container">
+        <div class="box">
+            <a href="https://www.youtube.com/watch?v=ZmInkxbvlCs&t=16s" target= "_blank"></a>
+            <img src="images/monty.png" alt="Monty Python" id="movie17-thumbnail" class="image">
+            <div class="text-box" id="box2">
+                <h2 class="movie-title">Monty Python</h2>
+                <a href="https://www.youtube.com/watch?v=WFGUp-kNnjM" target="_blank"><strong>Monty Python</strong></a>
+                <p>Plenty of Python fans will fist-fight you over which sketch or character is their favorite (and therefore best), 
+                    but there’s little question that Holy Grail is the British outfit’s most fiendishly inspired full-length outing. 
+                    It’s chiefly concerned with slathering Python’s devastating wit and surreal ideas over implicitly Big-Picture topics 
+                    like mortality, the innate dignity of the soul, political repression, and more. It’s got an urgency born from its production 
+                    particulars (having been conceived between seasons 3 and 4 of their TV series), a relatively paltry budget, and the 
+                    fact that the Pythons successfully translated their fearless experimentation from television to the big screen. 
+                    This Arthurian fable is densely packed with superb ideas executed flawlessly.
+                </p>
+            </div>
+        </div>
+    </div>    
+    <div class="box-container">
+        <div class="box">
+            <a href="https://www.youtube.com/watch?v=vTSmbMm7MDg" target= "_blank"></a>
+            <img src="images/anniehall.png" alt="Annie Hall" id="movie18-thumbnail" class="image">
+               <h2 class="movie-title">Annie Hall</h2>
+               <a href="https://www.youtube.com/watch?v=E1M-7QeclP4" target="_blank"><strong>Annie Hall </strong></a>
+            <p>Comedian Alvy Singer (Woody Allen) examines the rise and fall of his relationship with struggling nightclub
+                 singer Annie Hall (Diane Keaton). Speaking directly to the audience in front of a bare background, Singer 
+                 reflects briefly on his childhood and his early adult years before settling in to tell the story of how he 
+                 and Annie met, fell in love, and struggled with the obstacles of modern romance, mixing surreal fantasy 
+                 sequences with small moments of emotional drama.
+
+            </p>
+        </div>
+    </div>
+
+
+    <div class="box-container">
+        <div class="box">
+            <a href="https://www.youtube.com/watch?v=IzMpOvKxXdM&t=80s" target= "_blank"></a>
+            <img src="images/smokey.png" alt="Smokey and the Bandit" id="movie19-thumbnail" class="image">            
+            
+                  <h2 class="movie-title">Smokey and the Bandit</h2>
+                  <a href="https://www.youtube.com/watch?v=OKhGo7B2zM4" target="_blank"><strong>Smokey and the Bandit</strong></a>
+            <p>Smokey and the Bandit is a 1977 American action comedy film starring Burt Reynolds, Sally Field, Jackie Gleason, 
+                Jerry Reed, Pat McCormick, Paul Williams and Mike Henry. The film is the first installment of the Smokey and 
+                the Bandit trilogy as the start in the Smokey and the Bandit franchise.
+            </p>
+        </div>
+    </div>
+
+    <div class="box-container video-container">
+        <div class="box">
+            <a href="https://www.youtube.com/watch?v=O7why8Xo_RQ" target= "_blank"></a>
+            <img src="images/thejerk.png" alt="The Jerk" id="movie20-thumbnail" class="image">
+                 <h2 class="movie-title">The Jerk </h2>
+                 <a href="https://www.youtube.com/watch?v=Rt09lIQS_Uk" target="_blank"><strong>The Jerk</strong></a>
+            <p>Finding a more likable lead than Steve Martin would have been impossible for this fish-out-of-water tale,
+                which was inspired by a single line in Martin’s standup act and traces Navin R. Johnson’s rise from a poor
+                 “black” child to a wealthy, accidental inventor – and back to the literal gutter again. Like Being There, 
+                 the lead’s innocence and simplicity is contrasted to great effect with the cold, hard world around him. 
+                 Palpable chemistry between Martin and Bernadette Peters elevates what could have been a casually sketched 
+                 love story into something classic, dignified, and sweet. Martin is eager to please in his first starring role, 
+                 never turning up his nose at a dumb bit of humor. 
+        </div>
+            
+    </div>
+            
+        </div>
+        <a href="#">Back to top</a>
+    <script>
+        document.getElementById('movie16-thumbnail').addEventListener('click', function() {
+        window.open('https://www.youtube.com/watch?v=U4qIJkKy-00', '_blank');
+       }); 
+       document.getElementById('movie17-thumbnail').addEventListener('click', function() {
+        window.open('https://www.youtube.com/watch?v=ZmInkxbvlCs&t=16s', '_blank');
+       }); 
+       document.getElementById('movie18-thumbnail').addEventListener('click', function() {
+        window.open('https://www.youtube.com/watch?v=vTSmbMm7MDg', '_blank');
+       }); 
+       document.getElementById('movie19-thumbnail').addEventListener('click', function() {
+        window.open('https://www.youtube.com/watch?v=IzMpOvKxXdM&t=80s', '_blank');
+       }); 
+       document.getElementById('movie20-thumbnail').addEventListener('click', function() {
+        window.open('https://www.youtube.com/watch?v=O7why8Xo_RQ', '_blank');
+       }); 
+        
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
