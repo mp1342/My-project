@@ -2,8 +2,7 @@ Top Five Comedy Movies of Each Decade (1940s onwards)
 
 Introduction:
 
-This project presents a curated list of the top five comedy movies from each decade, starting from the 1940s. Each selection is accompanied by links to trailers and full-length movies available on YouTube. The project is designed to provide
- movie enthusiasts with a nostalgic journey through the evolution of comedy over the years. The academy awards do not have a specific category as they do for other genres like drama or animation.
+This project presents a curated list of the top five comedy movies from each decade, starting from the 1940s. Each selection is accompanied by links to trailers and to full-length movies available on YouTube. The project is designed to provide movie enthusiasts with a nostalgic journey through the evolution of comedy over the years. The academy awards do not have a specific category as they do for other genres like drama or animation.
 A journey through laughter: The evolution of comedy in cinema:
 In the grand tapestry of cinematic history, comedy has always held a place of honor, evoking laughter and joy, offering solace and escape, and providing a mirror to quirks and follies of our society. From the slapstick genius of the 1940s to the sophisticated satire of recent years, the landscape of comedy is as diverse as it is delightful.
 This project is a tribute to the timeless magic of laughter as seen through the lens of the greatest comedy movies of each decade since the 1940s. It is an homage to the brilliant minds that crafted these stories- the writers, directors and most notably, the actors whose impeccable timing and expressive artistry have etched these joyous moments into the annals of cinematic history.
@@ -12,7 +11,7 @@ This compilation is more than just a collection of movie scenes; it is celebrati
 May these timeless classics remind us that laughter is indeed a universal language, one that transcends time and binds us in shared joy and amusement.
 In my quest to curate the top five movies from each decade, I have encountered a delightful dilemma: the sheer abundance of cinematic treasures makes it nearly impossible to choose just five. Nevertheless, I have made my selections with the hope of sparking your curiosity and embarking you on an exhilerating journey of cinematic exploration.
 While delving into Youtube, I noticed that accessing full movies often comes with a cost. However, I have discovered numerous free web sites where you can immerse yourself in these classics, along with many other remarkable films.
-I have devoted considerable time and effort to this project. Despite this, I have encountered a technical challenge: adjusting the width of the first column which unfortunately aligns with the right border of the button group. The other four columns hold their own. That is why you will notice absence of fifth column in the movie clip. The actual project though will show all the columns.
+I have devoted considerable time and effort to this project. Despite this, I have encountered a technical challenge: in the pages with movie columns, adjusting the width of the first column which unfortunately aligns with the right border of the button group. The other four columns hold their own. That is why you will notice absence of fifth column in the movie clip guide. The actual project though will show all the columns.
 Features:
 
 Decade-wise Categorization: Movies are categorized by decade, starting from the 1940s.
@@ -44,8 +43,8 @@ Project Structure:
  Problems encountered: In the index page, the first movie column is wider than the other four columns which have same width 
 as expected. It seems that the right border of the First column seems to align with the right border of the button group. I tried several 
 combinations without success.
- Author
 
+Author:
 Mohan K PRANJPE, MD
 URL: https://youtu.be/xTQecITW7SM
 Acknowledgements:
